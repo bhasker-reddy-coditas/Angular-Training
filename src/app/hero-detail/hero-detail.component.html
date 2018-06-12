@@ -1,0 +1,10 @@
+<div *ngIf='hero' class="row" >
+  <h2 style="text-align:center">{{ hero.name | uppercase }} Details</h2>
+  <div class="col-sm-6">
+    <label>Id: </label><span>{{hero.id}}</span>
+  </div>
+  <div class="col-sm-6">
+    <label>Name: </label>
+    <input class="form-control" [(ngModel)]="hero.name" placeholder="Name">
+  </div>
+</div>
